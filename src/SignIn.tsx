@@ -7,7 +7,7 @@ function SignIn() {
 
   function handleRegisterAnCookie() {
     var date = new Date()
-    date.setTime(date.getTime() + 60 * 1000) // 1 minute
+    date.setTime(date.getTime() + 60 * 1000) // 2 minute
 
     const options = {
       path: '/',

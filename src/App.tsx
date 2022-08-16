@@ -1,12 +1,15 @@
+import { CookiesProvider } from 'react-cookie'
 import { BrowserRouter } from 'react-router-dom'
 
 import { Routers } from './Routes'
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routers />
-    </BrowserRouter>
+    <CookiesProvider>
+      <BrowserRouter>
+        <Routers />
+      </BrowserRouter>
+    </CookiesProvider>
   )
 }
 

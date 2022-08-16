@@ -4,11 +4,9 @@ import { useNavigate } from 'react-router-dom'
 function Home() {
   const navigator = useNavigate()
   const [cookie] = useCookies(['@iHoldBankStorageCookie'])
-  
-  if (cookie['@iHoldBankStorageCookie'] === null) {
-    navigator('/')
 
-    return;
+  if (cookie['@iHoldBankStorageCookie'] === undefined) {
+    navigator('/')    
   }
 
   return (
